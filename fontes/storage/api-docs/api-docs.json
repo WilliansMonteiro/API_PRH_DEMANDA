@@ -1,0 +1,110 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de ContraCheque",
+        "version": "1.0"
+    },
+    "paths": {
+        "/contra-cheque/search-pdf": {
+            "get": {
+                "tags": [
+                    "ContraCheque"
+                ],
+                "summary": "Busca o PDF do contracheque",
+                "operationId": "85ec8d51e845e5e3cdaad7b82364d5ed",
+                "parameters": [
+                    {
+                        "name": "cpf",
+                        "in": "query",
+                        "description": "CPF do empregado",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "mesReferencia",
+                        "in": "query",
+                        "description": "Mês de referência do contracheque",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "anoReferencia",
+                        "in": "query",
+                        "description": "Ano de referência do contracheque",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "idContracheque",
+                        "in": "query",
+                        "description": "ID do contracheque",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "PDF gerado com sucesso"
+                    },
+                    "400": {
+                        "description": "Parâmetro inválido"
+                    }
+                }
+            }
+        },
+        "/contra-cheque/search-dados": {
+            "get": {
+                "tags": [
+                    "ContraCheque"
+                ],
+                "summary": "Busca dados do contracheque",
+                "operationId": "3819e6eb10df74ab6c2ee175a64fbd6c",
+                "parameters": [
+                    {
+                        "name": "cpf",
+                        "in": "query",
+                        "description": "CPF do empregado",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "mesReferencia",
+                        "in": "query",
+                        "description": "Mês de referência do contracheque",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "anoReferencia",
+                        "in": "query",
+                        "description": "Ano de referência do contracheque",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Dados encontrados"
+                    },
+                    "404": {
+                        "description": "Nenhum registro encontrado"
+                    }
+                }
+            }
+        }
+    }
+}

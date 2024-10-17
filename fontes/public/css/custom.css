@@ -1,0 +1,122 @@
+.modulo-sistema{
+    background: white;
+    height: 115px;
+}
+.imagem-modulo{
+    width: 120px !important;
+    padding-right: 11px
+}
+.nome-modulo{
+    margin-bottom: 0px;
+}
+.tipo-display{
+    display: grid;
+}
+[class*=sidebar-dark] .brand-link{
+    background-color: #1376e0;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, 
+.sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{
+    background-color: #1376e0;
+}
+
+.imagem-usuario-perfil{
+    border: 1px solid white;
+    margin: 0 auto;
+    padding: 3px;
+    width: 3.5rem !important;
+}
+.card-primary{
+    border-top: 3px solid #1376e0;
+}
+.card-footer{
+    background-color: #ffffff;
+}
+
+.btn-novo, .btn-novo:hover{
+    background-color: #3a9ee7;
+    color: #ffffff;
+}
+.btn-pesquisa, .btn-pesquisa:hover{
+    background-color: #023c7e;
+    color: #ffffff;
+}
+.btn-cancelar, .btn-cancelar:hover{
+    background-color: #dc3c45;
+    color: #ffffff;
+}
+.btn-salvar, .btn-salvar:hover{
+    background-color: #55a846;
+    color: #ffffff;
+}
+
+.btn-icon {
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.btn-custom {
+    padding: 1px 15px 3px 2px;
+    border-radius: 50px;
+}
+
+section {
+    padding: 15px 0;
+}
+
+#team .card-team {
+    border: none;
+    background: #ffffff;
+}
+
+.frontside .card-team .card-team-title {
+    min-height: 100px;
+    color: #ffffff !important;
+}
+
+.img-fluid {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.help-block {
+    color: #FF1A1A;
+}
+
+
+.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height:60px;
+    width:60px;
+    margin:0px auto;
+    -webkit-animation: rotation .6s infinite linear;
+    -moz-animation: rotation .6s infinite linear;
+    -o-animation: rotation .6s infinite linear;
+    animation: rotation .6s infinite linear;
+    border-left:6px solid rgba(0,174,239,.15);
+    border-right:6px solid rgba(0,174,239,.15);
+    border-bottom:6px solid rgba(0,174,239,.15);
+    border-top:6px solid rgba(0,174,239,.8);
+    border-radius:100%;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes rotation {
+    from {-o-transform: rotate(0deg);}
+    to {-o-transform: rotate(359deg);}
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
